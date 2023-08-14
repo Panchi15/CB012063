@@ -1,0 +1,889 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: montserrat;
+    background: white;
+}
+nav {
+    background: #000000;
+    height: 160px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 15px;
+}
+nav  ul li a {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+a:hover {
+    background-color: #008080;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul {
+    position: absolute;
+    display: none;
+    background-color: #000000;
+    padding: 0%;
+    z-index: 999;
+    color: white;
+    
+}
+nav ul li:hover> ul {
+    display: block;
+}
+nav ul li ul li {
+    line-height: 2;
+    width: 150px;
+    padding: 6px;
+    display: block;
+    text-align: center;
+    
+}
+h1 {
+    color: white;
+    font-size: 48px;
+}
+.title {
+    color: white;
+    font-size: 50px;
+    padding-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.logo-wrapper {
+    display: flex;
+    align-items: left;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .img.logo {
+    float: left;
+    margin-right: 20px;
+}
+header label{
+  font-size: 20px;
+  color: white; 
+  cursor: pointer;
+  display: none;
+}
+#menu{
+  display: none;
+}
+/* .image-container {
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(243, 0, 0, 0.6);
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: .5s ease; 
+  }
+  
+  .image-container:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .box {
+    background: white;
+    border: 2px solid #008080;
+    margin: 20px;
+    font-size: 20px;
+    text-align: ce;
+  }
+  
+  .box-content {
+    padding: 20px;
+    font-family: sans-serif;
+  } */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+    color: white;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #000000;
+  }
+  /* .mid-text {
+    position: relative;
+    top: -600px; /* adjust as needed */
+    /* text-align: center;
+    font-size: 60px;
+    color: #008080;
+  } */ 
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-top: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    border-right: 4px solid #000000; /* Add vertical line */
+  }
+  
+  th {
+    background-color: #008080;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  img#myImage {
+    transition: transform 0.5s ease-in-out;
+  }
+  /* p {
+    margin-bottom: 20px;
+    border: 1px solid #008080;
+    padding: 10px;
+} */
+/* .img-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0,0,0,0.5);
+} */
+/* .image-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.center {
+  text-align: center;
+}
+.display {
+  display: inline-block;
+} */
+/* .position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 1; 
+  color: white; 
+  font-size: 36px;
+} */
+.image-text {
+  display: inline-block;
+  text-align: center;
+}
+
+.image-text p {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: -80px;
+  color: #ffffff;
+}
+.image-container {
+  text-align: center;
+}
+.paragraph-container {
+  display: flex;
+  justify-content: center; /* Use "center" to horizontally align the paragraphs */
+  margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.paragraph-container p {
+  width: 48%;
+  margin: 0 60px; /* Add horizontal margins */
+  text-align: justify; /* Optional: justify text for better spacing */
+  border: 1px solid #000000; /* Add border with desired values */
+  padding: 20px; /* Add padding with desired value */
+  font-size: 20px;
+}
+.one-line {
+  white-space: nowrap;
+}
+.center {
+  text-align: center;
+  padding: 20px;
+}
+.paragraph-container-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.paragraph-container-2 p {
+  width: 48%;
+  margin: 0 60px;
+  text-align: justify;
+  border: 1px solid #000000;
+  padding: 20px;
+  font-size: 20px;
+}
+.image-container-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 300px;
+}
+
+.image {
+  width: 30%; /* Adjust according to the desired width */
+  margin: 0 10px;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  margin-right: 1000px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  margin-left: 1000px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bordered {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px;
+}
+.top-left.bordered {
+  margin-right: 1000px;
+}
+
+.top-right.bordered {
+  margin-left: 1000px;
+}
+.image-container-3 {
+  display: flex;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.image-container .image-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.image-container img:last-child {
+  margin-right: 0;
+}
+.product-card {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #5c07f8;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  max-width: 300px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #008080;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #008080;
+}
+
+.product-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #008080;
+}
+
+.product-card .add-to-cart {
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.center-1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 150;
+}
+
+.one-line {
+  font-size: 26px;
+  color: #000808;
+  
+}
+.all-products-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.heading-container {
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 40px;
+  color: #008080;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-container {
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 40px;
+  color: #008080;
+  font-family: Arial, sans-serif;
+}
+.centered-text {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.image-container-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-image {
+  flex: 1;
+  margin-right: 10px;
+  width: 500px;
+  height: 800px;
+}
+
+.right-image {
+  flex: 1;
+  margin-left: 10px;
+  width: 800px;
+  height: 800px;
+}
+.middle-text {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+form {
+  border: 2px solid rgb(13, 10, 231);
+  padding: 20px;
+  margin: 0 auto;
+  text-align: justify;
+  max-width: 500px;
+  border-color: #000000;
+}
+.button-color {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.avatar {
+  border-radius: 50%;
+  width: 120px; 
+  height: 120px; 
+  margin-top: 30px;
+  border: 2px solid black;
+  display: block;
+  margin-left: 550px;
+  margin-bottom: 30px;
+}
+.second image {
+  text-align: center;
+  margin-top: 50px;
+}
+.visit-container {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+img-container {
+  text-align: center;
+  position: relative;
+}
+
+.img-container img {
+  display: block;
+  margin: 0 auto;
+  width: 900px;
+  height: 500px;
+  margin-top: 30px;
+}
+
+.centered-paragraph {
+  text-align: center;
+  margin-top: 30px; 
+  font-size: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+li {
+  margin-bottom: 5px;
+}
+
+/*footer*/
+footer{
+  position: fixed;
+  bottom: 0;
+
+}
+
+@media(max-height:800px)
+{
+  footer{
+      position: static;
+  }
+
+}
+.foo-ter{
+  background-color: #000000;
+  box-sizing: border-box;
+  text-align: left;
+  font: bold 16px;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+
+}
+.footer-left,.footer-center,.footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-left{
+  width: 30%;
+  margin-left: 4%;
+}
+.foo-ter h3{
+  color: white;
+  font: 35px;
+  margin: 0;
+}
+.foo-ter h3 span{
+  color: #008080;
+}
+.footer-links{
+  color: white;
+  margin: 20px 0 12px;
+}
+.footer-links a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+.footer-companyname{
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+    margin: 0;
+}
+.footer-center{
+    width: auto;
+    margin-left:9%;
+}
+.footer-center svg{
+    background-color:rgb(0, 0, 0) ;
+    color: white;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer-center svg.xmlns{
+    font-size: 16px;
+    line-height: 38px;
+}
+.footer-center p{
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    margin: 0;
+}
+.footer-center p span{
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height:2 ;
+
+}
+.footer-center p a{
+  color:lightblue;
+  text-decoration: none;  
+}
+.footer-right{
+  width: 30%;
+  margin-left:11%;
+  
+}
+.footer-companyabout{
+  line-height: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+.footer-companyabout span{
+  display: block;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer-icons{
+  margin-top: 25px;
+}
+.footer-icons a{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color:rgb(0, 0, 0) ;
+  border-radius: 2px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+.footer-icons a:hover{
+  background-color: white;
+}
+.footer-links a:hover{
+  color: #008080;
+}
+@media(max-width:880px){
+  .foo-ter.footer-links, .foo-ter.footer-center, .foo-ter.footer-right{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+  }
+}
+.footer-center svg{
+  margin-left: 0;
+
+
+}
+@media(max-width:800px){
+}
+  .footer{
+    flex-wrap: wrap;
+  }
+  .footer-left,.footer-center,.footer-right{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .fadeout {
+    opacity: 1;
+    animation-name: fadeout;
+    animation-duration: 2s;
+  }
+
+  @keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .table-footer a {
+    text-align: center;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 21 px;
+  }
+  
+  .product img {
+    width: 300px;
+    height: 300px;
+  }
+  .product button {
+    font-size: 1.3em;
+    background: #008080;
+    color: #ffffff;
+  }
+  .image-container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    margin: 10px;
+  }
+ .image-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  margin: 10px;
+}
+
+.fadeout {
+    opacity: 1;
+    animation-name: fadeout;
+    animation-duration: 5s;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.image-container-4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 300px;
+}
+
+/* animation to the heading of bentota page */
+.one-line {
+  animation-name: grow; 
+  animation-duration: 2s; 
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 24px;
+  }
+}
+
+/*unordered list in home page*/
+.circlelist, ul li{
+  list-style-type: circle;
+  margin-right: 20%;
+  margin-left: 30%;
+}
+
+/*ordered list in home page*/
+.numberedlist,ol li{
+  list-style-type: decimal;
+  margin-right: 25%;
+  margin-left: 25%
+}
+/*changing the font color of the kosgoda page*/
+div.a p {
+  color: #008080;
+}
+/*adding animation to paragraph 3 and 4 in kosgoda page*/
+.fade-in {
+  opacity: 0;
+  animation: fade-in 5s forwards;
+}
+
+@keyframes fade-in {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/*adding animation to paragraph 1 and 2 in bentota page*/
+.paragraph-container p {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slide-up 0.5s forwards;
+}
+
+@keyframes slide-up {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+/*adding font color to bentota page*/
+.paragraph-container-2.a p {
+  color: #5c07f8;
+}
+@media (max-width:700px ) {
+
+  .img-container{
+      width:  300px ;
+      margin: 0;
+      padding: 0;
+  }
+  header ul li a{
+      color: brown;
+  }
+
+  } 
+  .title {
+    text-align: center;
+  }
+/*book now button*/
+.button5 a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000; 
+  color: #fff; 
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 600px;
+}

@@ -1,0 +1,498 @@
+.table {
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: left;
+    border: solid black;
+    border-radius: 10px;
+    width: 500px;
+    background-color: white;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.block{
+    display:flex;
+    margin-top: 20px;
+    
+}
+.card{
+    margin-left: 10%;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+
+.card table {
+      border: 2px solid #008080; 
+      border-collapse: collapse;
+  }
+  
+.card th, .card td {
+      border: 1px solid #008080; 
+      padding: 8px;
+  }
+    
+}
+.button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008080; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.button2 :hover {
+    background-color: #008080; 
+}
+.button1{
+    height: 40px;
+    width: 80%;
+    display: flex ;
+    align-items: center;
+    background: #FFF;
+    border-radius: 12px;
+    border: solid #9d9999 2px;
+    background-color: #fdfdfe;
+    color: rgb(3, 3, 3);
+  }
+  .button1 span{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #605c5c;
+    cursor: pointer;
+  }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav li {
+    display: inline;
+  }
+  nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  nav a:hover {
+    background-color: #000000; 
+  }
+  nav {
+    background-color: #008080;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #008080; 
+    padding: 10px 20px;
+  }
+  
+  .title {
+    margin-bottom: 10px; 
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  .table-container {
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+.dates {
+    color: #008080;
+    font-family: serif;
+}
+.guests {
+    color: #008080;
+    font-family: serif;
+}
+.duration {
+    color: #008080;
+    font-family: serif;
+}
+label {
+    font-size: 18px;
+}
+.date {
+    font-size: 18px;
+}
+.peakhours {
+    font-size: 18px;
+}
+.timeslots {
+  font-size: 18px;
+}
+.point {
+  color: #008080;
+  margin-left: 20px;
+}
+/* Reset default form margins and paddings */
+.form-table {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+/* Display the form elements as a table */
+.form-table label,
+.form-table input,
+.form-table select {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+/* Adjust the spacing between form elements */
+.form-table br {
+  display: none;
+}
+
+/* Separate form elements into two columns */
+.form-table label:nth-child(-n+3),
+.form-table input:nth-child(-n+3),
+.form-table select:nth-child(-n+3) {
+  width: 50%;
+}
+
+/* Optional: Add some spacing between columns */
+.form-table label:nth-child(odd),
+.form-table input:nth-child(odd),
+.form-table select:nth-child(odd) {
+  padding-right: 10px;
+}
+
+/* Optional: Add some spacing between rows */
+.form-table label,
+.form-table input,
+.form-table select {
+  padding-bottom: 10px;
+}
+.button3 a{
+  margin-left: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008080; 
+  color: #fff; 
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+/* Styling for the country code dropdown container 
+.mobile-number-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styling for the flag icon 
+.flag-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+/* Optional: Set a background color for the dropdown container 
+.mobile-number-dropdown select {
+  padding-right: 30px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none; /* Remove default styles on some browsers 
+  -webkit-appearance: none; /* Remove default styles on Safari 
+}
+
+/* Optional: Add some spacing between rows 
+.form-table label,
+.form-table input,
+.form-table select {
+  padding-bottom: 10px;
+}*/
+
+/* Basic styling for the form */
+.card-details-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #008080;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  font-family: serif;
+  color: #ffffff;
+}
+
+/* Styling for the table */
+.card-details-form table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Styling for table cells (labels and input fields) */
+.card-details-form td {
+  padding: 8px 0;
+}
+
+/* Styling for labels */
+.card-details-form label {
+  font-weight: bold;
+  display: block;
+  font-family: serif;
+}
+
+/* Styling for input fields */
+/* .card-details-form input[type="text"] {
+  position: fixed;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: serif;
+} */
+
+/* Optional: Add some margin to the submit button */
+.card-details-form input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Optional: Style the submit button on hover */
+.card-details-form input[type="submit"]:hover {
+  background-color: #008080;
+}
+.button4 a {
+  margin-left: 660px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008080; 
+  color: #fff; 
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.f-point {
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #000000;
+}
+.logo-wrapper {
+  display: flex;
+  align-items: left;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.img.logo {
+  float: left;
+  margin-right: 20px;
+}
+/* animation */
+.point {
+  animation-name: grow; 
+  animation-duration: 2s; 
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 24px;
+  }
+}
+/*footer*/
+.navfo ul{
+  list-style-type: none;
+  padding: 0;
+  margin-left: 15%;
+  display: flex;
+}
+.navfo li{
+  width: calc(25% - .2em);
+  color: #ffffff;
+  padding-left: 40px;
+}
+.navfo ul li a{
+  color: #ffffff;
+  
+
+}
+.navfo {
+  height: 100%;
+  line-height: 20px;
+ 
+  display: block;
+  color:#ffffff;
+}
+footer{
+  text-align: center;
+  background:#008080;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  
+}
+.navfo li:nth-of-type(1)  {
+background-image: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-contact-512.png);
+background-size: 40px auto;
+background-repeat: no-repeat;
+background-position: left;
+
+}
+.navfo li:nth-last-of-type(2)  {
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAmVBMVEUAN8H///8AHr3j5vULQMQIPcMOQsQFO8ISRcUVR8YYSscbTMgCOcEPQ8UAMMAeT8hdcs9NZcwfT8klVMoALb8nVsrr7fhugNMAKb6gq+AANMB4h9X09vwAGLwAIr4AE7zN0++Ektm4wOhjdtDAx+uWot4uXM3c4PTIzu10hdU2VMeLmdudqeDX3PKosuSzu+ZWa81HYcuQndzp9UhsAAAG80lEQVR4nO3dfXeiOBTAYUmlvhTRaSnFKEF8mbZ225nu9/9wq7ZVhCRcXi4Y9/7OmTln/5hZnwFiCBQ61rXXafsDoEdC8yOh+ZHQ/GDCuX9zefnzeoSLzaofhuwSC8P+arOoJlxOQhG4vHOpcTcQ4WRZVujHQrhtGwC5gsV+CeF8Fnltf3ZwXjRTHpQq4ZSZ49vnsWkhob8VbX/kwomtfFeVCtfMhOMvnRuuocJN1PaHLVm0gQljBvjLOOedXrd7e1Y3L1te79j5f+1yHKcAkcUQYZx7CHLeHYwffn/3mO4h0TjZ/f393VnDfYNj/f7+13ejXYd/tN0vuwdliiwxI9zotyDn9vBBTjuhTrYdSmYbDjO4H9bX75k9wrZhSJbZUdPCtfYY5M7wsRXe184MIUbp4SYl9EOdr9vO1vs5Vm3Q3sp8rXCr/prgt4/t8g5DUD7R3eqEU+Uow+0HVF4fxDuURxRTtXCuHmXGxXjjMrxbAA9CZHOlcKaYi/JR1nfOewDwMr5c3vfBV8y3m6POVEJfNY6O1bxxkldw71Twqmy+ryJfIYylm5D3Hn/LfBV5IyzefiPGCqF0mOHdVofO4rx9Qi5cyoR80CzP4a4X7BLfMfb1+0+wkx6xlAonkj/Nh83xetwTYvz09rF8eX9Wra89gYjuRCqUTGdOQGye44rubHlj5aUa7lOFMuEiu5P+7KLoOycX9//k6woIxWmR8STcBBngqJljj7OndxAPLgxOpxgn4Sqzh3cbmZU57EmzFlhS6K4kwn564dd5xOfZPW/8DPeBhbwvEaYHGj5O8HBmZbsvPPZWxAcWJoaao3CeEvIBjKfafKBJpyNeigHhwuPs+yj0U+cV9tneiTPpdIJCe2gRITsOzUfhzbmQNzArcwTsGwJHOMCfdDoh+DsCQ9jAnFp8FAfWJuRD/FMG928JYG1Cp4EzIgG7SI0j5IMx+glfoLoa1sw2bOB81ikFrEs4wuXtz9eDMsNMbUJe/1JgZjkiKAesSWjfZ3mlJp3qpcCztaLmhf0KszJbe/AdCwtP12oVQg++8kuB3C4JrEdoYwyd53kFz5lqFo7wVzoLnzTVKxzgL+RGpeYztQnv0Nep+V1ZYC3CHv4yvPfaqrCLzNtVck5ar7DqrExb+YGmFuEImbf/3wO/79//bOLZWfEWeLOrTlh80lmM10kuhGnyXxkLAi8V9G7ePGHuQq6tnlNDhADgstrtrTrhAPP68yHO84GLincParch5vXnL+E4XziueHO5fi/FvP68z/3MBd7o7s2qLMTl7YX5q2x/Mpf6ahSOcHkw4RumsK47kzTCiZyV6LXqffTaOQ0uDybMXq6tUXiLy4MJZfeF1CasZ9qiq3Vhhlfj5jsEEP7FFGJuva8uQIhx8CVqW4jM67QvROZ1LkCIy+u0L0TmddoXIvM6FyKsitAGEP7CFVYV5NW2ED8SGih0z1cEg/wz4M/MMmKNq4kIwKdUsh9mPe8t/Ud++qxhRbj+WC4I3r/A5Q1zhbCfRjBZ+Hn1Qvvqj0PoSrGxwvTd6NcnfIZ+SmOFL9AnkhgrBF/PMFaY/eGsaxNCb1QwVwheCzdWCL0Vw1wh+LKisULwxW9ThekfP7s+4Tv4EWSmCtdXL/y4+pEGfouGqULoGoa5QugahrlC6BqGuUL4ZzRUCF7DMFYIXsMwVghew2haKPx0uZbMnzg0hd+x2PC1p9RTqqNfucJtJHu8dYFbMun6IW4kJCEkEuJGQhJCIiFuJCQhJBLiRkISQiIhbiQkISQS4kZCEkIiIW4kJCEkEuJGQhJCIiFuJCQhJBLiRkISQiIhbiQkISQS4kZCEkIiIW4kJCEkEuJGQhJCIiFuJCQhJBLiRkISQiIhbiQkISQS4kZCEkL6XwrhDwqrXEvCAk9GqVoTwtMrFo9C+OPsKteI8PhXnYT9iu/jg9eAkPclwsovAgPXgNBdSYTgx7tWrgFhcHp0/0m4gD/Ap2KJf2AsoVhIhM0NNXz7MdX3UfUlnYl3uSaEld/mBo4HeVUEJo+DhHDZ2G6KnlhKhdYVCS25MK76asxLyYsVQr/iW4YvpshXCOHPA7/svJmlEs6bO7/AjM2VQmt6DYONmFpqobVt7DsRLXdr6YQNngdjxXyt0FqbPp5Ga0svtDZmb0WWeR9YRmjFJo82Is54skIrNncrsixQJrQ2ph6LkeyVdTKhtWYmfmm4LD3IqIWWvzXvYBRb+cN75cLd7IaZNUf12FQhUQmt+SxqbGmqcl40m6sgSuFuV42FMOF4dAWLNU+X1gh3LSehCNzGlooLx91AhJOl1qAX7lpsVv0wlD17uvXCsL/aLPIAucJD85tLTHnolRCaHAnNj4TmR0Lzu37hf165czC2ewkJAAAAAElFTkSuQmCC);
+background-size: 20px 25px;
+background-repeat: no-repeat;
+background-position: left;
+}
+.navfo li:nth-of-type(3)  {
+background-image: url(https://cdn-icons-png.flaticon.com/512/94/94915.png);
+background-size: 20px auto;
+background-repeat: no-repeat;
+background-position: left;
+padding-top: 10px;
+}
+
+
+
+/* Add this media query to target phone views */
+@media screen and (max-width: 768px) {
+  /* Reset margin and padding for body */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Adjust header for mobile */
+  header {
+    padding: 10px;
+  }
+
+  /* Center-align the logo and navigation links */
+  .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    position: static;
+    margin-right: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust form layout for mobile */
+  .block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .table input[type="date"] {
+    width: 100%;
+  }
+
+  .dates,
+  .guests,
+  .duration,
+  .off-peakhours,
+  .peakhours {
+    text-align: center;
+  }
+
+  /* Adjust button alignment and sizing */
+  .button1,
+  .button2,
+  .button3,
+  .button4 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Adjust card layout for mobile */
+  .card {
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  /* Adjust highlights layout for mobile */
+  .highlights {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* Adjust table container layout for mobile */
+  .table-container {
+    display: none;
+  }
+
+  /* Adjust footer layout for mobile */
+  .navfo ul {
+    flex-direction: column;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .navfo li {
+    width: auto;
+    margin: 0;
+  }
+
+  .navfo li:nth-of-type(1),
+  .navfo li:nth-of-type(2),
+  .navfo li:nth-of-type(3) {
+    background-image: none;
+    padding-top: 0;
+    text-align: center;
+  }
+}

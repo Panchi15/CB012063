@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style/Tickets.css" type="text/css">
+   
+    <title>BUY TICKETS</title>
+</head>
+<body>
+    <header>
+        <div class="title">BUY TICKETS</div>
+        <nav>
+            <label class="logo"><img src="Images/tt01.png" alt="image" width="100" height="100"></label>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Tickets.html" id="ticketslink">TICKETS</a></li>
+                <li><a href="Details.html" id="detailslink">DETAILS</a></li>
+                <li><a href="Payment.html" id="paymentlink">PAYMENT</a></li>
+                <li><a href="Confirmation.html" id="confirmationlink">CONFIRMATION</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="submit,php">
+    <div class="block">
+    <div class ="table">
+    <div  class="dates">
+        <h2>Dates</h2>
+        <input type="date" id="inputdate" required>
+    </div>
+    <div class="guests">
+    <h2>Guests</h2>
+    </div>
+       
+    <p>SELECT THE NUMBER OF TICKETS</p>
+    
+    <label for="adultTickets">Sri Lankan Adult:</label>
+    <div class="button1">
+        <span class="deduct1">-</span>
+        <span class="num1">0</span>
+        <span class="add1">+</span>
+        <br>
+    </div>
+    <br>
+    <label for="childTickets">Sri Lankan Child:</label>
+    <div class="button1">
+        <span class="deduct2">-</span>
+        <span class="num2">0</span>
+        <span class="add2">+</span>
+        <br>
+    </div>
+    <br>
+    <label for="FAdultTickets">Foreign Adult:</label>
+    <div class="button1">
+        <span class="deduct3">-</span>
+        <span class="num3">0</span>
+        <span class="add3">+</span>
+        <br>
+    </div>
+    <br>
+    <label for="FChildTickets">Foreign Child:</label>
+    <div class="button1">
+        <span class="deduct4">-</span>
+        <span class="num4">0</span>
+        <span class="add4">+</span>
+        <br>
+    </div>
+    <br>
+    <label for="Infant">Infant:</label>
+    <div class="button1">
+        <span class="deduct5">-</span>
+        <span class="num5">0</span>
+        <span class="add5">+</span>
+        <br>
+    </div>
+    <br>
+   
+    <section>
+        <div class="duration">
+            <h2>Duration</h2>
+        </div>
+
+        <div class="off-peakhours">
+            <h3>Choose Off-peakhours</h3>
+        <label>
+        <input type="checkbox" id="checkbox1" name="time"
+        value="07:00 AM to 08:00 AM">07:00 AM to 08:00 AM
+        </label><br>
+
+        <label>
+            <input type="checkbox" id="checkbox2" name="time"
+            value="08:00 AM to 09:00 AM">08:00 AM to 09:00 AM
+        </label><br>
+
+        <label>
+            <input type="checkbox" id="checkbox3" name="time"
+            value="09:00 AM to 10:00 AM">09:00 AM to 10:00 AM
+        </label><br>
+
+        <label>
+            <input type="checkbox" id="checkbox4" name="time"
+            value="01:00 PM to 02:00 PM">01:00 PM to 02:00 PM
+        </label><br>
+
+        <label>
+            <input type="checkbox" id="checkbox5" name="time"
+            value="02:00 PM to 03:00 PM">02:00 AM to 03:00 PM
+        </label><br> 
+    </div>
+
+    <div class="peakhours">
+        <h3>Choose Peakhours</h3>
+        <label>
+            <input type="checkbox" id="checkbox6" name="time"
+            value="10:00 AM to 11:00 AM">10:00 AM to 11:00 AM
+            </label><br>
+
+            <label>
+                <input type="checkbox" id="checkbox7" name="time"
+                value="11:00 AM to 12:00 PM">11:00 AM to 12:00 PM
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="checkbox8" name="time"
+                    value="12:00 PM to 01:00 PM">12:00 PM to 01:00 PM
+                    </label><br>
+
+                    <label>
+                        <input type="checkbox" id="checkbox9" name="time"
+                        value="03:00 PM to 04:00 PM">03:00 PM to 04:00 PM
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" id="checkbox10" name="time"
+                            value="04:00 PM to 05:00 PM">04:00 PM to 05:00 PM
+                            </label><br>
+
+                            <label>
+                                <input type="checkbox" id="checkbox11" name="time"
+                                value="05:00 PM to 06:00 PM">05:00 PM to 06:00 PM
+                                </label><br>
+                            </div>            
+<br>
+        <div class="button2">
+            <a href="details.html"><button type="button"  id="nxt" disabled >Continue with purchase</button></a>
+          </div>
+    </section><br>
+    </div>
+</form>
+    
+    <div class="card">
+        <table border="1" id="tbl1">
+            <tr id="rowA">
+                <th>Date</th>
+                <td id="displaydate">current_date</td>
+            </tr>
+            <tr id="rowB">
+                <th>Time</th>
+                <td id="displayTimeslots">Timeslots</td>
+            </tr>
+            <tr id="rowC">
+            <th>Duration</th>
+                <td id="displayDuration">Duration</td>
+            </tr>
+            <tr>
+                <th>Tickets</th>
+                <td>Charges</td>
+            </tr>
+            <tbody id="ticketTableBody">
+                <tr id="rowD">
+                    <td>SL Adults</td>
+                    <td id="SumSlAd"></td>
+                </tr>
+                <tr id="rowE">
+                    <td>SL Children</td>
+                    <td id="SumSlCh"></td>
+                </tr>
+                <tr id="rowF">
+                    <td>Foreigner Adults</td>
+                    <td id="SumFAd"></td>
+                </tr>
+                <tr id="rowG">
+                    <td>Foreigner Children</td>
+                    <td id="SumFCh"></td>
+                </tr>
+                <tr id="rowH">
+                    <td>Infants</td>
+                    <td id="SumInfant"></td>
+                </tr>
+            </tbody>
+            <tr id="rowI">
+                <th>Total Payable</th>
+                <td id="totalPayable">$0</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="highlights">
+    <ol>
+        <li>Peak hours are from 10.00 am to 1.00 pm and from 3.00 pm to 6.00 pm.</li>
+        <li>Entrance for SL or foreign infants under 4 years is completely free.</li>
+    </ol>
+</div>
+<div class="table-container">
+    <table border="1">
+        <tr>
+            <th>Category</th>
+            <th>Normal Hour Charge (USD)</th>
+            <th>Peak Hour Charge (USD)</th>
+        </tr>
+        <tr>
+            <td>Foreigner Adult</td>
+            <td>10</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>Foreigner Child</td>
+            <td>5</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>SL Adult (Sri Lankan Adult)</td>
+            <td>4</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>SL Child (Sri Lankan Child)</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+</div>
+<div id="foot">
+    <footer>
+        <nav class="navfo">
+            <ul>
+                <li><a href="mail-to=cb012063@students.apiit.lk">Contact Us</a></li>
+                <li><a href="https://web.facebook.com/koggalaseaturtle/?_rdc=1&_rdr">facebook</a></li>
+                <li>011-2289924</li>
+            </ul>
+
+            <p>Copyright 2023 <strong>Ceylon Sea Turtles</strong> All rights reserved</p>
+            </nav>
+            </footer>
+</div>
+
+  
+
+<script src="script/Tickets.js"></script>
+ 
+
+</body>
+</html>
